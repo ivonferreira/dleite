@@ -7,6 +7,7 @@
     <title>DLeite - Bolos, docinhos e delicias</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon2.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header id="top">
@@ -19,14 +20,17 @@
             </picture>
         </p>
     </header>
-    <nav>
-        <p>
-            <a href="#top">Home</a>
-            <a href="#historia">História</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#orcamento">Encomendas</a>
-            <a href="#contato">Contato</a>
-        </p>
+    <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
+    <nav id="menu">
+        
+        <ul>
+            
+            <li><a href="#top">Home</a></li>
+            <li><a href="#historia">História</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#orcamento">Encomendas</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
     <main>
         <h1 id="home">Dleite</h1>
@@ -102,5 +106,6 @@
     <footer>
         <p>Site produzido por Ivon Ferreira.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
