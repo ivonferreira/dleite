@@ -20,6 +20,8 @@
     --cor0:#c48282; 
     --corl:#801711;
 }
+    
+@media all{
 body {
     background-color: var(--cor0);
 }
@@ -37,9 +39,6 @@ header img {
 nav {
     background-color: var(--cor1);
     height: 30px;
-}
-nav#menu {
-    display:block;
 }
 nav ul {
     
@@ -102,7 +101,13 @@ footer {
     color: white;
     text-align: center;
 }
-@media screen and (max-width: 700px){
+}
+@media screen and (min-width: 700px){
+    nav#menu{
+        display: block;
+    }
+}
+@media screen and (orientation: portrait) and (max-width: 700px){
 
 span#burger{
     display:block;
@@ -125,4 +130,9 @@ nav a {
     display:block; 
       
 }
+}
+@media screen and (min-width: 700px){
+    nav#menu{
+        display: block;
+    }
 }
